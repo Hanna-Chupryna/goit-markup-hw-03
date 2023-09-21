@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo-end {
+  color: #2e2f42;
+}
+
+.link-menu {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.contacts {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.link-contacts {
+  color: #434455;
+}
+
+.link-menu:hover,
+.link-menu:focus,
+.link-contacts:hover,
+.link-contacts:focus {
+  color: #404bbf;
+}
+
+.section-title {
+  background: #2e2f42;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  /* Header 1 */
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+
+.btn {
+  color: #fff;
+  /* Button Text */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background: #4d5ae5;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #404bbf;
+}
+
+.feature-title,
+.team-title,
+.portfolio-title {
+  color: #2e2f42;
+  /* Header 3 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
+.feature-text,
+.team-text,
+.portfolio-text {
+  /* Body */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.section-title {
+  color: #2e2f42;
+  text-align: center;
+  /* Header 2 */
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.section-team {
+  background-color: #f4f4fd;
+}
+
+.list-team {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-logo-end {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  /* Body */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background: #2e2f42;
+}
