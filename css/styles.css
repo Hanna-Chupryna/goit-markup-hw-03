@@ -2,14 +2,76 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  /* max-width: 1440px; */
 }
 
+/* ====== Removes margins from the paragraph and heading ========*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ====== Removes markers and margins from the list ========*/
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
+/* ======= Removes underlining in links ========*/
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+
+/* ========= HEADER ========== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-menu {
+  display: flex;
+  flex-grow: 1;
+  gap: 76px;
+  align-items: center;
 }
 
 .logo {
@@ -21,9 +83,18 @@ a {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-
 .logo-end {
   color: #2e2f42;
+}
+
+.header-height {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
 }
 
 .link-menu {
@@ -42,10 +113,14 @@ a {
   letter-spacing: 0.32px;
 }
 
+.contacts-container {
+  display: flex;
+  gap: 40px;
+}
+
 .link-contacts {
   color: #434455;
 }
-
 .link-menu:hover,
 .link-menu:focus,
 .link-contacts:hover,
@@ -53,8 +128,11 @@ a {
   color: #404bbf;
 }
 
-.section-title {
+/* ========= HERO ========== */
+.hero {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .title {
@@ -64,6 +142,7 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
 }
 
 .btn {
@@ -75,23 +154,45 @@ a {
   line-height: 1.5;
   letter-spacing: 0.64px;
   background: #4d5ae5;
-  cursor: pointer;
-}
+  padding: 16px 32px;
 
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  border: none;
+}
 .btn:hover,
 .btn:focus {
   background: #404bbf;
 }
 
+/* ========= FEATURE ========== */
+.feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100%-24 * 3) / 4);
+}
+
 .feature-title,
 .team-title,
 .portfolio-title {
-  color: #2e2f42;
   /* Header 3 */
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .feature-text,
@@ -103,26 +204,68 @@ a {
   letter-spacing: 0.32px;
 }
 
+/* ========= TEAM ========== */
+.team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
+  /* Header 2 */
   color: #2e2f42;
   text-align: center;
-  /* Header 2 */
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
-.section-team {
-  background-color: #f4f4fd;
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
-.list-team {
+.team-item {
+  width: calc((100%-24 * 3) / 4);
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team-container-text,
+.portfolio-container-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* ========= PORTFOLIO ========== */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+  background: #ffffff;
+  width: 360px;
+}
+
+.portfolio-container-text {
+  padding-left: 16px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo-end {
@@ -136,4 +279,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.32px;
   background: #2e2f42;
+  width: 264px;
+  margin-top: 16px;
 }
