@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  /* max-width: 1440px; */
 }
 
 /* ====== Removes margins from the paragraph and heading ========*/
@@ -53,49 +52,47 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /* ========= HEADER ========== */
 .header {
   border-bottom: 1px solid #e7e9fc;
   background: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.logo-menu {
+.navigation {
   display: flex;
-  flex-grow: 1;
+  gap: 76px;
   align-items: center;
 }
 
-.logo {
+.link-logo {
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway;
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-right: 76px;
 }
-.logo-end {
+.link-logo-color {
   color: #2e2f42;
-}
-
-.header-height {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu {
   display: flex;
   gap: 40px;
 }
-
 .link-menu {
   color: #2e2f42;
   font-size: 16px;
@@ -104,7 +101,17 @@ img {
   letter-spacing: 0.32px;
 }
 
-.contacts {
+.height {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 40px;
+}
+.link-contacts {
+  color: #434455;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -112,14 +119,6 @@ img {
   letter-spacing: 0.32px;
 }
 
-.contacts-container {
-  display: flex;
-  gap: 40px;
-}
-
-.link-contacts {
-  color: #434455;
-}
 .link-menu:hover,
 .link-menu:focus,
 .link-contacts:hover,
@@ -176,14 +175,6 @@ img {
   padding-bottom: 120px;
 }
 
-.feature-list {
-  display: flex;
-  gap: 24px;
-}
-
-.feature-item {
-  width: calc((100%-24 * 3) / 4);
-}
 
 .feature-title,
 .team-title,
