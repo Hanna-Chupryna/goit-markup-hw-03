@@ -52,7 +52,7 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* ========= HEADER ========== */
@@ -175,6 +175,14 @@ img {
   padding-bottom: 120px;
 }
 
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .feature-title,
 .team-title,
